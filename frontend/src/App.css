@@ -1,0 +1,276 @@
+.app {
+  min-height: 100vh;
+  background: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.form-group textarea:focus {
+  outline: none;
+  border-color: black;
+}
+
+.form-group textarea:disabled {
+  background: #f5f5f5;
+  color: #999;
+}
+
+.generate-prompt-btn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: #f0f0f0;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.generate-prompt-btn:hover:not(:disabled) {
+  background: #e0e0e0;
+}
+
+.generate-prompt-btn:disabled {
+  background: #f5f5f5;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.presets {
+  margin-bottom: 15px;
+}
+
+.presets label {
+  display: block;
+  margin-bottom: 8px;
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.preset-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.preset-btn {
+  padding: 6px 12px;
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.preset-btn:hover:not(:disabled) {
+  background: #f5f5f5;
+}
+
+.preset-btn:disabled {
+  background: #f5f5f5;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.generate-btn {
+  width: 100%;
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.generate-btn:hover:not(:disabled) {
+  background: #333;
+}
+
+.generate-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+.loading p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-top: 2px solid black;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.result {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.result h3 {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.image-container {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.download-btn:hover {
+  background: #333;
+}
+
+.info {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.info h3 {
+  color: black;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.info ol {
+  color: black;
+  line-height: 1.4;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.info li {
+  margin-bottom: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
